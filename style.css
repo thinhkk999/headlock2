@@ -1,0 +1,26 @@
+/* ==================== HIỆU ỨNG GLOW VIP BỔ SUNG ==================== */
+.key-input:focus, .login-btn:hover, .create-key-button:hover {
+    animation: rainbowGlow 3s linear infinite !important;
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.6) !important;
+}
+
+@keyframes rainbowGlow {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+}
+
+/* Đảm bảo thanh cuộn trong danh sách Key mượt mà hơn */
+.package-list-container::-webkit-scrollbar, 
+.table-container::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+.package-list-container::-webkit-scrollbar-thumb, 
+.table-container::-webkit-scrollbar-thumb {
+    background: rgba(167, 139, 250, 0.3);
+    border-radius: 10px;
+}
+.package-list-container::-webkit-scrollbar-thumb:hover, 
+.table-container::-webkit-scrollbar-thumb:hover {
+    background: rgba(236, 72, 153, 0.5);
+}
